@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto');
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: #34495e;
+}
+.true {
+  background: #2ecc71;
+  color: #fff;
+  font-weight: 500;
+}
+.false {
+  background: #e74c3c;
+  color: #fff;
+}
+.info {
+	color: #ecf0f1;
+}
+.title {
+	font-family: 'Lobster';
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 6em;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+body {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+}
+main {
+	text-align: center;
+}
+.search {
+  width: 420px;
+  background: #ecf0f1;
+  border: none;
+  height: 40px;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  vertical-align: center;
+}
+footer {
+  color: #bdc3c7;
+}
+footer>p>a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+}
+#suggestions {
+  background: #ecf0f1;
+  list-style: none;
+  width: 430px !important;
+  margin: auto;
+  padding: 0px;
+  max-height: 300px;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+#suggestions>li {
+  text-align: left;
+  padding: 8px 0px 8px 8px;
+  cursor: pointer;
+}
+#suggestions>li:hover {
+  background: #bdc3c7;
+}
+p {
+	margin: 0px;
+}
+aside {
+	background: #fff;
+	z-index: 2;
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+	padding: 13px 14px 14px 13px;
+	overflow: auto;
+}
+.openclose {
+	color: #e74c3c;
+	float: right;
+}
+@media screen and (max-width: 410px) {
+  .title {
+    margin-top: 70px;
+    font-size: 4em;
+  }
+  footer {
+    display: none;
+  }
+  .search {
+    width: auto;
+    background: #ecf0f1;
+    border: none;
+    height: 40px;
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    vertical-align: center;
+  }
+  #suggestions {
+  	width: auto !important;
+  	overflow: auto;
+  	max-width: 320px;
+  }
+}
