@@ -1,7 +1,7 @@
 // Tof dat je de code wilt bekijken.
 // Niet kopieëren aub :)
 
-var words = ["fiets", "bus", "hoelaat", "blub"];
+var words = ["Wie is", "Hoeveel verdient", "Is King Alert", "Is Enzo Knol", "Is Milan Knol", "Is Pewdiepie"];
 var stopped = 0;
 var guesses = 0;
 var rounds = 1;

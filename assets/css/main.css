@@ -27,24 +27,25 @@
   margin-bottom: 30px;
 }
 body {
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #E83833; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #141e30, #243b55); 
+  background: linear-gradient(to right, #141e30, #243b55); */
   font-family: 'Roboto', sans-serif;
 }
 main {
 	text-align: center;
 }
 .search {
-  width: 420px;
+  width: 400px;
   background: #ecf0f1;
   border: none;
-  height: 40px;
+  height: 35px;
   font-size: 25px;
   line-height: 25px;
   margin-bottom: 10px;
   padding-left: 10px;
   vertical-align: center;
+  border-radius: 10px;
 }
 footer {
   color: #bdc3c7;
@@ -62,12 +63,13 @@ footer {
 #suggestions {
   background: #ecf0f1;
   list-style: none;
-  width: 430px !important;
+  width: 410px !important;
   margin: auto;
   padding: 0px;
   max-height: 300px;
   overflow: auto;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 #suggestions>li {
   text-align: left;
@@ -95,16 +97,20 @@ aside {
 	color: #e74c3c;
 	float: right;
 }
+h1 {
+  font-size: 2.5em !important;
+}
 @media screen and (max-width: 410px) {
   .title {
-    margin-top: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 4em;
   }
   footer {
     display: none;
   }
   .search {
-    width: auto;
+    width: auto !important;
     background: #ecf0f1;
     border: none;
     height: 40px;
@@ -117,5 +123,8 @@ aside {
   	width: auto !important;
   	overflow: auto;
   	max-width: 320px;
+  }
+  h1 {
+    font-size: 1.5em !important;
   }
 }
